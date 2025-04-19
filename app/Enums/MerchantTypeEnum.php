@@ -2,7 +2,9 @@
 
 namespace App\Enums;
 
-enum MerchantTypeEnum : string
+enum MerchantTypeEnum: string
 {
-    case UNKNOWN = "UNKNOWN";
+    case ACTIVE = 'ACTIVE';
+    case INACTIVE = 'INACTIVE';
+    case PENDING = 'PENDING';
 }

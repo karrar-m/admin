@@ -19,8 +19,8 @@ return new class extends Migration
             $table->string('phone')->nullable();
             $table->string('address')->nullable();
             $table->string('city')->nullable();
-            $table->enum('status', MerchantStatusEnum::cases());
-            $table->enum('type', MerchantTypeEnum::cases());
+            $table->string('status')->default(MerchantStatusEnum::PENDING); // يمكن تحديد قيمة افتراضية
+            $table->string('type')->default(MerchantTypeEnum::PENDING); // يمكن تحديد قيمة افتراضية
             $table->timestamps();
         });
     }

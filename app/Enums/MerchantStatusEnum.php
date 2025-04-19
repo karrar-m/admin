@@ -1,9 +1,10 @@
 <?php
+
 namespace App\Enums;
 
-enum MerchantStatusEnum :int
+enum MerchantStatusEnum: string
 {
-    case ACTIVE = 1;
-    case INACTIVE = 0;
-    case PENDING = 2;
+    case ACTIVE = 'ACTIVE';
+    case INACTIVE = 'INACTIVE';
+    case PENDING = 'PENDING';
 }
