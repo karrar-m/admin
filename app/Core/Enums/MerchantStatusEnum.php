@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Enums;
+namespace App\Core\Enums;
 
-enum MerchantTypeEnum: string
+enum MerchantStatusEnum: string
 {
     case ACTIVE = 'ACTIVE';
     case INACTIVE = 'INACTIVE';

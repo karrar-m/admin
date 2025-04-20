@@ -5,7 +5,7 @@ namespace App\Features\Auth\Services;
 use App\Models\User;
 use App\Features\Auth\Contracts\IUser;
 use Illuminate\Support\Facades\Hash;
-use App\Core\TypedResult;
+use App\Core\Result\TypedResult;
 
 class IUserService implements IUser
 {

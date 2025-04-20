@@ -2,7 +2,7 @@
 
 namespace App\Features\Auth\Contracts;
 
-use App\Core\TypedResult;
+use App\Core\Result\TypedResult;
 
 interface IUser
 {
