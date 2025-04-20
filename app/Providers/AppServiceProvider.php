@@ -3,7 +3,9 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-
+use App\Features\Auth\Services;   
+use App\Features\Auth\Contracts\IUser;
+use App\Features\Auth\Services\IUserService;
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -11,7 +13,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        $this->app->bind(abstract: IUser::class, concrete: IUserService::class);
     }
 
     /**
