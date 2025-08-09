@@ -1,6 +1,6 @@
 <?php
-use App\Enums\MerchantStatusEnum;
-use App\Enums\MerchantTypeEnum;
+use App\Common\Enums\MerchantStatusEnum;
+use App\Common\Enums\MerchantTypeEnum;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -19,8 +19,8 @@ return new class extends Migration
             $table->string('phone')->nullable();
             $table->string('address')->nullable();
             $table->string('city')->nullable();
-            $table->string('status')->default(MerchantStatusEnum::PENDING); // يمكن تحديد قيمة افتراضية
-            $table->string('type')->default(MerchantTypeEnum::PENDING); // يمكن تحديد قيمة افتراضية
+            $table->string('status')->default('PENDING'); // Default status
+            $table->string('type')->default('PENDING'); // Default type
             $table->timestamps();
         });
     }

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Common\TypedResult;
+namespace App\Common\Result;
 
 final class TypedResult
 {
