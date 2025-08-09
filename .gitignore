@@ -44,6 +44,9 @@ Thumbs.db
 # Laravel Telescope data
 /storage/telescope/*
 
+# Laravel Debugbar logs
+/storage/debugbar/*
+
 # Local configuration
 .env.local
 .env.testing
