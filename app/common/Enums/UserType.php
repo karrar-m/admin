@@ -3,6 +3,7 @@
 namespace App\Common\Enums;
 
 use App\Common\Attributes\Description;
+use App\Common\Helpers\EnumExtensions;
 
 enum UserType: int
 {
