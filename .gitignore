@@ -21,3 +21,31 @@ yarn-error.log
 /.nova
 /.vscode
 /.zed
+
+# Additional ignores for sensitive data
+/storage/logs/*.log
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/database/database.sqlite
+composer.lock
+package-lock.json
+
+# IDE and editor files
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Swagger generated files
+/storage/api-docs/
+
+# Laravel Telescope data
+/storage/telescope/*
+
+# Local configuration
+.env.local
+.env.testing
+composer.json
+composer.lock
