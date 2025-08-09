@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Common\Enums;
+namespace App\Common\Helpers;
 
 use ReflectionEnum;
 use App\Common\Attributes\Description;
