@@ -6,7 +6,6 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\CreateUserRequest;
 use App\Features\Users\Actions\CreateUserAction;
 use Illuminate\Http\JsonResponse;
-use OpenApi\Attributes as OA;
 
 class UserController extends Controller
 {
